@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_berita"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3C70"
+    tools:context="com.skybox.isasetiawan.emochi.BeritaActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#455FA9"
+        android:layout_height="240dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gambar_headline" />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:id="@+id/waktu_headline"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:id="@+id/judul_headline"
+            android:textSize="24sp" />
+
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recview"/>
+</LinearLayout>

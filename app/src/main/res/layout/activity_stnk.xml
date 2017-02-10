@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2D3C70"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_stnk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.skybox.isasetiawan.emochi.stnkActivity">
+
+        <ImageView
+            android:layout_width="383dp"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/headerstnk"
+            android:id="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/daftarstnk"
+            android:id="@+id/stnkbaru"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27"
+            android:layout_marginTop="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pengesahanstnk"
+            android:id="@+id/sahanstnk"
+            app:layout_constraintTop_toBottomOf="@+id/stnkbaru"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/daftarulangstnk"
+            android:id="@+id/ulangstnk"
+            app:layout_constraintTop_toBottomOf="@+id/sahanstnk"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hilangstnk"
+            android:id="@+id/stnkhilang"
+            app:layout_constraintTop_toBottomOf="@+id/ulangstnk"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

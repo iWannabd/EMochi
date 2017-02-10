@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "280546651741",
+    "firebase_url": "https://e-mochi.firebaseio.com",
+    "project_id": "e-mochi",
+    "storage_bucket": "e-mochi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280546651741:android:e8bd8b5bc9e4fa66",
+        "android_client_info": {
+          "package_name": "com.skybox.isasetiawan.emochi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280546651741-1226s3vbch2d40htj1k57k4beqq8u83u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skybox.isasetiawan.emochi",
+            "certificate_hash": "1EEEF99D28848A8B9BEB9B0532E85307A20284DA"
+          }
+        },
+        {
+          "client_id": "280546651741-s311193eoiq9e8bai1sgn9terurj5b7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHOX53XempWr0SUwA2W13Nux56afxezWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280546651741-s311193eoiq9e8bai1sgn9terurj5b7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

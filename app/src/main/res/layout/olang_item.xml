@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_height="108dp">
+
+    <ImageView
+        android:layout_height="108dp"
+        android:background="#F8B600"
+        android:id="@+id/imageView6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="8dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_height="108dp"
+        android:background="#455FA9"
+        android:id="@+id/imageView20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/gambar" />
+
+    <ImageView
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/gambar"
+        android:background="#455FA9"
+        app:layout_constraintLeft_toRightOf="@+id/imageView6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="88dp" />
+
+    <TextView
+        android:text="Alamat: "
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_address"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="10sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView20"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/person_name"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:text="Kontak: "
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_cp"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="10sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView20"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/person_sex"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:text="Jenis Kelamin: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_sex"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/person_age"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView20"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:text="Usia: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_age"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="10sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView20"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/person_address" />
+
+    <TextView
+        android:text="Namanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_name"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView20"
+        android:layout_marginLeft="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>

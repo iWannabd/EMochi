@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.skybox.isasetiawan.emochi">
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+        tools:replace="android:authorities">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/provider_paths" />
+    </provider>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Polda">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".ContacUs"
+            android:label="@string/contact_us"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".SocmedActivity"
+            android:label="Sosial Media"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".ActivityPelares"
+            android:label="Pelayanan Polres"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".ActivityPelantas"
+            android:label="Pelayanan Lantas"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ActivityOrangHilang"
+            android:label="Orang Hilang"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".ActivityDPO"
+            android:label="DPO Kepolisian"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".PengaduanActivity"
+            android:label="Pengaduan"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".PenpolriActivity"
+            android:label="Info Penerimaan Polri" />
+        <activity
+            android:name=".PemerintahanActivity"
+            android:label="Link Pemerintahan"
+            android:parentActivityName=".MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".SamsatActivity"
+            android:label="Pelayanan Samsat" />
+        <activity
+            android:name=".stnkActivity"
+            android:label="STNK" />
+        <activity
+            android:name=".bpkbActivity"
+            android:label="BPKB" />
+        <activity
+            android:name=".ArusLantasActivity"
+            android:parentActivityName=".MainMenuActivity"
+            android:label="Info Arus Lantas" />
+        <activity
+            android:name=".AddDpoActivity"
+            android:label="Laporkan Orang" />
+        <activity
+            android:name=".AddOlangActivity"
+            android:label="Laporkan Orang Hilang" />
+        <activity
+            android:name=".BeritaActivity"
+            android:label="Berita"
+            android:parentActivityName=".MainMenuActivity" />
+        <activity
+            android:name=".AngkotActivity"
+            android:label="Angkutan Umum"
+            android:parentActivityName=".MainMenuActivity" />
+        <activity
+            android:name=".sp2hpActivity"
+            android:label="SP2HP Online"
+            android:parentActivityName=".MainMenuActivity" />
+        <activity
+            android:name=".BerkasActivity"
+            android:parentActivityName=".MainMenuActivity"
+            android:label="SP2HP Online" />
+        <activity android:name=".Main2Activity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
