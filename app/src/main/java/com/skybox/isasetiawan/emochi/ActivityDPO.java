@@ -91,9 +91,10 @@ public class ActivityDPO extends AppCompatActivity {
         public void onBindViewHolder(ViewHolder holder, int position) {
             DPO.Datum selected = data.get(position);
             holder.nama.setText(selected.nama);
-            holder.address.append(selected.kasus);
+            holder.address.setText("Kasus:"+selected.kasus);
             holder.usia.append(selected.usia);
             holder.sex.append(selected.sex);
+            holder.ciri.append(selected.ciri);
             holder.cp.setText("Call Center: "+selected.call);
             Kutil.setImageFromUrl(ActivityDPO.this,holder.gambar,Kutil.storageurl+selected.img);
 
@@ -118,6 +119,8 @@ public class ActivityDPO extends AppCompatActivity {
             TextView address;
             @BindView(R.id.gambar)
             ImageView gambar;
+            @BindView(R.id.ciri)
+            TextView ciri;
 
             public ViewHolder(View itemView) {
                 super(itemView);

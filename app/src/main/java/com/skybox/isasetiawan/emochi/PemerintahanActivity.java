@@ -76,7 +76,7 @@ public class PemerintahanActivity extends AppCompatActivity {
                 -6.918065,106.931627));
 
         data.add(new Goverment("Kodim 0607 Sukabumi",
-                " ",
+                "JL. R.A. Kosasih, No. 12, Cisarua, Kec. Sukabumi, Kota Sukabumi, Jawa Barat 43192",
                 "0266 4203294",
                 "http://kodim0607-kotasukabumi.com/",
                 -6.919318,106.954733));

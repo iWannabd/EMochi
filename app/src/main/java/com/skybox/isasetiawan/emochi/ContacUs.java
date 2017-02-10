@@ -71,7 +71,7 @@ public class ContacUs extends AppCompatActivity {
         polresArrayList.add(new Polres("POLSEK SUKABUMI","Jalan Selabintana Km. 5.5 Sukabumi, Kab. Sukabumi 43111","0266223298",-6.886444,106.942985));
         polresArrayList.add(new Polres("POLSEK SUKARAJA","Jalan Raya Sukaraja No.176 Sukaraja, Kab. Sukabumi 43192","0266221745",-6.917732,106.963996));
         polresArrayList.add(new Polres("POLSEK SUKALARANG","Jalan Raya Sukalarang Km. 13 Sukalarang, Kab. Sukabumi 43191","0266261349",-6.876735,107.021434));
-        polresArrayList.add(new Polres("POLSEK CIREUNGHAS","Jalan   Raya   Cireunghas   Km. 11.5 Cireunghas, Kab. Sukabumi 43193","0266243376",-6.945308,107.008078));
+        polresArrayList.add(new Polres("POLSEK CIREUNGHAS","Jalan Raya Cireunghas Km.11.5 Cireunghas, Kab. Sukabumi 43193","0266243376",-6.945308,107.008078));
         polresArrayList.add(new Polres("POLSEK KEBONPEDES","Jalan  Sasagaran  No. 9  Kebonpedes, Kab. Sukabumi 43191","0266245983",-6.956302,106.962073));
         polresArrayList.add(new Polres("POLSEK GUNUNG GURUH","Jalan  Padjadjaran  Blok Kutamaneh Cikujang Gunung Guruh 43156","02666254856",-6.938560,106.905712));
         polresArrayList.add(new Polres("POLSEK KADUDAMPIT","Jalan Raya Situgunung Km. 8 Kadudampit, Kab. Sukabumi 43153","0266214643",-6.846843,106.925019));

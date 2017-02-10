@@ -3,14 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.skybox.isasetiawan.emochi">
 
-    <provider
-        android:name="android.support.v4.content.FileProvider"
-        android:authorities="${applicationId}.com.vansuita.pickimage.provider"
-        tools:replace="android:authorities">
-        <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/provider_paths" />
-    </provider>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
 
     <application
         android:allowBackup="true"
@@ -18,11 +14,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Polda">
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
         <activity
             android:name=".MainMenuActivity"
             android:label="@string/app_name">
@@ -90,7 +91,7 @@
             android:label="Info Penerimaan Polri" />
         <activity
             android:name=".PemerintahanActivity"
-            android:label="Link Pemerintahan"
+            android:label="Panduan Kota"
             android:parentActivityName=".MainMenuActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

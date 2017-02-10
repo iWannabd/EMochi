@@ -231,28 +231,33 @@ public class BeritaActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) throws IOException {
                 try {
                     parsingXML(response.body().string());
-                    data.remove(0);
-                    data.remove(0);
-                    data.remove(0);
-                    data.remove(0);
-                    for (News n: data) {
-                        Log.d(TAG, "onResponse: "+n.getImgLink());
-                    }
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            rv.setAdapter(new NewsAdapter());
-                            judulh.setText(data.get(0).title);
-                            waktuh.setText(data.get(0).date);
-                            pg.dismiss();
-                            try {
-                                setImageFromUrl(headline_pict,data.get(0).getImgLink());
-                            } catch (XmlPullParserException e) {
-                                e.printStackTrace();
-                            }
-//                    waktuh.setText(df.format(feed.getItems().get(0).getPublicationDate()));
+                    if (data.size()<=0) {
+                        Toast.makeText(BeritaActivity.this,"Maaf, server bermasalah",Toast.LENGTH_LONG).show();
+                        finish();
+                    } else {
+                        data.remove(0);
+                        data.remove(0);
+                        data.remove(0);
+                        data.remove(0);
+                        for (News n: data) {
+                            Log.d(TAG, "onResponse: "+n.getImgLink());
                         }
-                    });
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                rv.setAdapter(new NewsAdapter());
+                                judulh.setText(data.get(0).title);
+                                waktuh.setText(data.get(0).date);
+                                pg.dismiss();
+                                try {
+                                    setImageFromUrl(headline_pict,data.get(0).getImgLink());
+                                } catch (XmlPullParserException e) {
+                                    e.printStackTrace();
+                                }
+//                    waktuh.setText(df.format(feed.getItems().get(0).getPublicationDate()));
+                            }
+                        });
+                    }
                 } catch (XmlPullParserException e) {
                     e.printStackTrace();
                 }

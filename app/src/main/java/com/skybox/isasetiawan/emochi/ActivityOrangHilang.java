@@ -107,6 +107,7 @@ public class ActivityOrangHilang extends AppCompatActivity {
             holder.cp.append(selected.kontak);
             holder.usia.append(selected.usia);
             holder.sex.append(selected.sex);
+            holder.ciri.append(selected.ciri);
 
             //setting photo
             Kutil.setImageFromUrl(ActivityOrangHilang.this,holder.gambar,Kutil.storageurl+selected.img);
@@ -130,6 +131,9 @@ public class ActivityOrangHilang extends AppCompatActivity {
             TextView address;
             @BindView(R.id.gambar)
             ImageView gambar;
+            @BindView(R.id.ciri)
+            TextView ciri;
+
 
             public ViewHolder(View itemView) {
                 super(itemView);

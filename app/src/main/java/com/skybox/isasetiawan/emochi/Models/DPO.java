@@ -47,6 +47,9 @@ public class DPO {
         @SerializedName("validate")
         @Expose
         public String validate;
+        @SerializedName("ciri")
+        @Expose
+        public String ciri;
 
     }
 
