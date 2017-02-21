@@ -59,7 +59,7 @@ public class ActivityPelantas extends AppCompatActivity {
                     openlink("http://satlantasressmikota.com/tilang.html");
                 }
                 if (i==3){
-                    Toast.makeText(getBaseContext(),"Maaf, menu belum tersedia",Toast.LENGTH_SHORT).show();
+                    openlink("http://satlantasressmikota.com/sim-online.html");
                 }
                 if(i==4){
                     startActivity(new Intent(ActivityPelantas.this,AngkotActivity.class));

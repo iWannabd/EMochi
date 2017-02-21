@@ -55,7 +55,7 @@ public class SocmedActivity extends AppCompatActivity {
 
     private String[] urls = {
             "http://www.satlantasressmikota.com/",
-            "https://www.facebook.com/kresna.polressukabumikota",
+            "https://m.facebook.com/profile.php?id=100005359785537&tsid=0.5811878519531355&source=typeahead",
             "https://twitter.com/LantasKotaSki",
             "https://www.instagram.com/tmc.ressmikota/",
             "https://plus.google.com/113282335178305512315",

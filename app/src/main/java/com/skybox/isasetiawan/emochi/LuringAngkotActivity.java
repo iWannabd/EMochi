@@ -5,17 +5,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
+import it.sephiroth.android.library.imagezoom.ImageViewTouch;
 
-public class AngkotActivity extends AppCompatActivity {
+public class LuringAngkotActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_angkot);
+        setContentView(R.layout.activity_allrute);
         ButterKnife.bind(this);
+
+        ImageViewTouch imageViewTouch = (ImageViewTouch) findViewById(R.id.ancot);
+        imageViewTouch.setImageResource(R.drawable.angkotall);
     }
 
     @Override
@@ -32,17 +42,5 @@ public class AngkotActivity extends AppCompatActivity {
         if (item.getItemId() == android.R.id.home)
             finish();
         return true;
-    }
-
-    @OnClick(R.id.imageView16)
-    public void gotomaps(){
-        Intent intent = new Intent(this,PilihaAngkotActivity.class);
-        startActivity(intent);
-    }
-
-    @OnClick(R.id.imageView17)
-    public void gotom(){
-        Intent intent = new Intent(this,LuringAngkotActivity.class);
-        startActivity(intent);
     }
 }

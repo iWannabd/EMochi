@@ -38,7 +38,7 @@ public class stnkActivity extends AppCompatActivity {
         openlink("http://satlantasressmikota.com/pendaftaran-ulang-stnk-5-tahun.html");
     }
 
-    @OnClick(R.id.ulangstnk)
+    @OnClick(R.id.stnkhilang)
     public void asklda(){
         openlink("http://satlantasressmikota.com/stnk-hilang-duplikat.html");
     }

@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/sp2hplebar"
         android:background="#f8b600"
+        android:layout_marginBottom="16dp"
         android:id="@+id/imageView14" />
 
     <android.support.design.widget.TextInputLayout
@@ -29,22 +30,10 @@
             android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama" />
+            android:hint="NO LP (Tanpa Spasi)" />
 
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/qwe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/nomor_lp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nomor LP (Tanpa Spasi)" />
-
-    </android.support.design.widget.TextInputLayout>
 
     <Button android:id="@+id/btn_submit"
         android:layout_marginTop="16dp"

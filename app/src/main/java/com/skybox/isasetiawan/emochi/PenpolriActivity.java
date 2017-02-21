@@ -21,8 +21,8 @@ public class PenpolriActivity extends AppCompatActivity {
 
     String[] urls = {
             "http://penerimaan.polri.go.id/syarat_akpol",
-            "http://penerimaan.polri.go.id/syarat_brigadir",
             "http://penerimaan.polri.go.id/syarat_sipss",
+            "http://penerimaan.polri.go.id/syarat_brigadir",
             "http://penerimaan.polri.go.id/syarat_tamtama"
     };
 

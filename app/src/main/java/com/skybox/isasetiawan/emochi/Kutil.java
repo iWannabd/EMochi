@@ -24,6 +24,12 @@ public class Kutil {
 
     public static String storageurl = "http://e-moci.satlantasressmikota.com/storage/app/public/";
 
+    public static void openlink(AppCompatActivity activity, String link){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(link));
+        activity.startActivity(intent);
+    }
+
     public static void emergencyCall(AppCompatActivity activity){
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel: 02666248110"));

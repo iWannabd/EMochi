@@ -153,10 +153,10 @@ public class AddDpoActivity extends AppCompatActivity implements IPickResult {
     }
 
 //    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
+//    protected void onActivityResult(int requestCode, int resultCode, Intent spph) {
+//        super.onActivityResult(requestCode, resultCode, spph);
 //        if (requestCode==PICK_IMAGE_REQUEST && resultCode==AppCompatActivity.RESULT_OK){
-//            File file = new File(data.getData().getPath());
+//            File file = new File(spph.getData().getPath());
 //            Bitmap bmp = BitmapFactory.decodeFile(file.getAbsolutePath());
 //            Log.d(TAG, "onActivityResult: "+file.getAbsolutePath());
 //            preview.setImageURI(Uri.fromFile(file));
